@@ -1,0 +1,600 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+/* Navigation styling */
+header {
+  height: 65px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #272929;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: none;
+}
+.nav-bar ul {
+  float: right;
+}
+.nav-bar li {
+  list-style-type: none;
+  float: left;
+  bottom: 55px;
+  position: relative;
+  padding: 19px;
+  display: inline-block;
+  background: transparent;
+  border-top: 4px solid transparent;
+  left: 75px;
+}
+.nav-bar li:hover {
+  background: rgb(64, 69, 69);
+  border-top: 4px solid rgba(255,255,255,0.9);
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  margin: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.logo img {
+  display: inline;
+  margin-top: 14px;
+}
+.logo span {
+  font-family: Arial;
+  text-transform: none;
+  font-size: 15px;
+  color: rgb(142, 144, 143);
+  position: relative;
+  bottom: 12px;
+  right: 10px;
+  font-weight: thin;
+}
+
+/* Landing page styling */
+.background-image {
+  background-image: url(../Images/BackgroundImage-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+  right: 0;
+  left: 0;
+  -webkit-filter: blur(0px);
+  -moz-filter: blur(0px);
+  -o-filter: blur(0px);
+  -ms-filter: blur(0px);
+  filter: blur(0px);
+  top: 0px;
+}
+.home {
+  position: absolute;
+  width: 100%;
+  top: 20px;
+  text-align: center;
+  z-index: 10;
+}
+.home h1 {
+  font-size: 84px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: white;
+  position: relative;
+  font-weight: normal;
+  padding-top: 40px;
+  margin: 20px;
+}
+.home p {
+  color: white;
+  font-size: 28px;
+  line-height: 50px;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#paragraphTwo {
+  position: relative;
+  top: 40px;
+}
+.home input {
+  padding: 15px;
+  font-size: 30px;
+  padding-right: 35px;
+  padding-left: 35px;
+  color: rgb(86, 90, 92);
+  text-align: center;
+  margin-top: 80px;
+  border: 1px solid #02A4F5;
+}
+
+.home button {
+  padding: 14px;
+  font-size: 20px;
+  padding-right: 25px;
+  padding-left: 25px;
+  background: #02A4F5;
+  border: 1px solid #02A4F5;
+  border-radius: 2px;
+  color: white;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.home button:hover {
+  background: #008DD4;
+
+}
+#purchaseLink {
+  font-size: 16px;
+  color: white;
+}
+#purchaseLink a {
+  color: #02A4F5;
+  font-weight: 700;
+}
+.pe-7s-angle-down {
+  color: white;
+  cursor: pointer;
+  -webkit-animation: pulsate 1.5s ease-out;
+  -webkit-animation-iteration-count: infinite;
+}
+/* Begin info section */
+.info {
+  height: 400px auto;
+  width: 100%;
+  position: relative;
+  background: url(../Images/bg_pattern.png);
+}
+.info h1 {
+  text-align: center;
+  font-size: 36px;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+.info p {
+  max-width: 50%;
+  text-indent: -17px;
+  margin: 10px auto;
+  color: rgb(86, 90, 92);
+  position: relative;
+  padding: 20px;
+  font-size: 18px;
+  text-align: left;
+}
+.wrapText {
+  padding-bottom: 50px;
+}
+.section {
+	clear: both;
+	padding: 50px;
+	margin: 0px;
+}
+.info .fa {
+  padding: 30px;
+}
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+/*  GRID OF TWO  */
+.span_2_of_2 {
+	width: 100%;
+}
+.span_1_of_2 {
+	width: 49.2%;
+}
+
+/* Begin book section */
+.book {
+  height: 600px auto;
+  width: 100%;
+  position: relative;
+  background: #272929;
+  box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+.book h1 {
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 10px;
+  padding: 10px;
+}
+.book p {
+  color: white;
+  line-height: 25px;
+}
+.book p a {
+  color: white;
+}
+.book img {
+  max-width: 75%;
+  margin-left: 75px;
+}
+.book button {
+  padding: 8px;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  background: #02A4F5;
+  border: 1px solid #02A4F5;
+  border-radius: 2px;
+  color: white;
+  margin-top: 25px;
+}
+.book button:hover {
+  background: #008DD4;
+}
+.square {
+  height: 40px;
+  width: 40px;
+  background: #272929;
+  transform: rotate(45deg);
+  margin: 0 auto;
+  position: relative;
+  top: 20px;
+  z-index: 50;
+}
+
+/* Begin purchase section */
+.purchase {
+  height: 400px;
+  width: 100%;
+  background: rgb(86, 90, 92);
+  position: relative;
+}
+.purchaseLinks {
+  background: white;
+  height: 200px;
+  position: relative;
+  top: 100px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.purchase h1 {
+  color: white;
+  z-index: 10;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px;
+  top: 30px;
+  position: relative;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+.purchase h3 {
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 50px;
+}
+.purchaseLinks img {
+  margin: 45px;
+}
+
+/* Begin FAQ section */
+
+.FAQ {
+  height: 600px auto;
+  width: 100%;
+  background: url(../Images/bg_pattern.png);
+  position: relative;
+}
+.FAQ h1 {
+  color: #272929;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 20px;
+  padding: 20px;
+}
+.FAQ h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.FAQ p {
+  color: rgb(86, 90, 92);
+  margin: 20px;
+}
+.FAQ p a {
+  color: #02A4F5;
+}
+.FAQ p, h3 {
+  margin: 10px auto;
+  max-width: 60%;
+
+}
+#backTop  {
+  margin: 5 auto;
+  text-align: center;
+  color: #02A4F5;
+  cursor: pointer;
+}
+/* Begin footer */
+
+footer {
+  height: 100px;
+  background-color: #272929;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+footer span {
+  float: right;
+  position: relative;
+  padding: 10px;
+  right: 10px;
+  top: 14px;
+  color: white;
+  font-size: 10px;
+}
+
+footer img {
+  display: inline;
+  margin-top: 14px;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 1500px) {
+  .book img {
+    max-width: 50%;
+    margin-left: 75px;
+  }
+}
+/* Scale home screen text down to remove any orphans */
+@media only screen and (max-width: 1005px) {
+  .home p {
+    font-size: 24px;
+    transition: 200ms ease-in-out;
+  }
+}
+@media only screen and (max-width: 900px) {
+  /* Mobile navigation styling */
+  .mobileNav {
+    width: 28px;
+		height: 25px;
+		margin: 5px auto;
+    bottom: 59px;
+		padding: 20px;
+		cursor: pointer;
+		position: relative;
+    background-color: transparent;
+		transition: 50ms ease-in-out;
+    float: left;
+    display: inline;
+  }
+  .mobileNav:hover {
+    background-color: rgb(64, 69, 69);
+		transition: 50ms ease-in-out;
+	}
+	.mobileNav div {
+		width: 100%;
+		height: 4px;
+		border-radius: 1px;
+		background: white;
+		margin: 3px auto;
+		transition: all 0.3s;
+		backface-visibility: hidden;
+	}
+  .logo img {
+    display: inline;
+    margin-top: 14px;
+    padding-left: 50px;
+  }
+  .logo span {
+    font-family: Arial;
+    text-transform: none;
+    font-size: 15px;
+    color: rgb(142, 144, 143);
+    position: relative;
+    bottom: 12px;
+    right: 10px;
+    font-weight: thin;
+  }
+   .nav-bar li {
+    display: none;
+    float: left;
+  }
+  .nav-bar ul {
+    float: left;
+    position: fixed;
+    width: 100%;
+    top: 96px;
+    right: 51px;
+  }
+   .showNav li {
+    display: block;
+    border-left: 4px solid transparent;
+    width: 100%;
+    background-color: rgb(64, 69, 69);
+    padding: 10px;
+    border-top: none;
+    float: right;
+    }
+  .showNav li:hover {
+    border-left: 4px solid rgba(255,255,255, 0.9);
+    border-top: none;
+    background-color: #272929;
+    }
+
+  header {
+    position: fixed;
+    z-index: 1000;
+  }
+
+  /* Home/Landing page */
+
+  .home h1 {
+    font-size: 72px;
+    transition: 200ms ease-in-out;
+  }
+  .home p {
+    color: white;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  #paragraphTwo {
+    position: relative;
+    top: 10px;
+  }
+  .home input {
+    padding: 10px;
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #272929;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    top: 15px;
+  }
+  .home button {
+    padding: 8px;
+    font-size: 14px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 2px;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.3);
+    position: relative;
+    top: 15px;
+  }
+  #purchaseLink {
+    font-size: 14px;
+    color: white;
+    position: relative;
+    top: 15px;
+  }
+  #purchaseLink a {
+    font-weight: 700;
+  }
+
+}
+@media only screen and (max-width: 800px) {
+  /* Adjust image sizes */
+  .book img {
+    width: 250px;
+    height: 250px;
+    max-width: none;
+    display: block;
+  }
+  .purchaseLinks img {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+
+  .FAQ h1 {
+    top: 20px;
+    position: relative;
+  }
+  .home h1 {
+    font-size: 58px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* Adjust section title font sizes */
+  .book h1 {
+    font-size: 28px;
+  }
+  .FAQ h1 {
+    font-size: 28pxpx;
+  }
+
+  .book img {
+    display: none;
+  }
+  .book .span_2_of_2, .span_1_of_2 {
+    width: 100%;
+  }
+  .info h1 {
+    font-size: 28px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .home p {
+    color: white;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  #purchaseLink {
+    font-size: 12px;
+  }
+  .purchaseLinks {
+    flex-direction: column;
+    text-align: center;
+  }
+  .purchaseLinks img {
+    max-width: 75%;
+    margin: 10 auto;
+  }
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS (2 COLUMN GRID) */
+@media only screen and (max-width: 480px) {
+	.col {
+		margin: 1% 0 1% 0%;
+	}
+  .home h1 {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+@media only screen and (max-width: 380px) {
+  .book button {
+    text-align: center;
+  }
+  .FAQ h1 {
+    top: 70px;
+  }
+  .FAQ .section {
+    top: 50px;
+    position: relative;
+  }
+}
+/* Keyframe animation in order to get the pulse like effect on home page arrow */
+@-webkit-keyframes pulsate {
+  50% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
