@@ -327,6 +327,7 @@ header {
 }
 #backTop  {
   margin: 5 auto;
+  padding: 10px;
   text-align: center;
   color: #02A4F5;
   cursor: pointer;
@@ -563,8 +564,9 @@ footer img {
   .home h1 {
     font-size: 40px;
   }
-  .info p {
-    max-width: 80%;
+  .info p, .FAQ p, h3 {
+    max-width: 70%;
+    margin: 0 auto;
   }
   .info h1, .book h1, .FAQ h1 {
     font-size: 24px;

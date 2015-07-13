@@ -3,6 +3,11 @@ $(document).ready(function() {
   /* ANIMATE SCROLL WHEN ANCHOR ELEMENTS ARE CLICKED */
   var page = $('html, body');
 
+  $('#backTop, .homeAnchor').click(function() {
+      page.animate({scrollTop: 0 }, 1000);
+      return false;
+  });
+
   $('.pe-7s-angle-down').click(function() {
     page.animate({
       scrollTop: $('.info').offset().top -65
@@ -27,13 +32,9 @@ $(document).ready(function() {
             }, 1000);
     } else {
     page.animate({
-        scrollTop: $(".FAQ").offset().top - 50
+        scrollTop: $(".FAQ").offset().top - 30
       }, 1000);
         }
-  });
-  $('#backTop').click(function() {
-      page.animate({scrollTop: 0 }, 'slow');
-      return false;
   });
 
   /* MAKE THE NAV BAR APPEAR WHEN THE PAGE IS SCROLLED PAST HOME IMAGE */
