@@ -59,31 +59,21 @@ header {
 }
 
 /* Landing page styling */
-.background-image {
+.home {
   background-image: url(../Images/BackgroundImage-min.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  position: relative;
-  z-index: 1;
-  display: inline-block;
   width: 100%;
   height: 100vh;
-  right: 0;
-  left: 0;
-  -webkit-filter: blur(0px);
-  -moz-filter: blur(0px);
-  -o-filter: blur(0px);
-  -ms-filter: blur(0px);
-  filter: blur(0px);
-  top: 0px;
-}
-.home {
-  position: absolute;
-  width: 100%;
   top: 20px;
   text-align: center;
   z-index: 10;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .home h1 {
   font-size: 84px;
@@ -92,7 +82,7 @@ header {
   color: white;
   position: relative;
   font-weight: normal;
-  padding-top: 40px;
+  padding-top: 0px;
   margin: 20px;
 }
 .home p {
@@ -222,7 +212,7 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 10px;
-  padding: 10px;
+  padding: 30px;
 }
 .book p {
   color: white;
@@ -317,7 +307,7 @@ header {
   letter-spacing: 2px;
   text-transform: uppercase;
   margin: 20px;
-  padding: 20px;
+  padding: 50px;
 }
 .FAQ h3 {
   font-size: 20px;
@@ -517,7 +507,7 @@ footer img {
   }
 
   .FAQ h1 {
-    top: 20px;
+    top: 25px;
     position: relative;
   }
   .home h1 {
@@ -530,7 +520,7 @@ footer img {
     font-size: 28px;
   }
   .FAQ h1 {
-    font-size: 28pxpx;
+    font-size: 28px;
   }
 
   .book img {
@@ -560,6 +550,9 @@ footer img {
     max-width: 75%;
     margin: 10 auto;
   }
+  .FAQ h1 {
+    margin-top: 15px;
+  }
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS (2 COLUMN GRID) */
@@ -570,6 +563,12 @@ footer img {
   .home h1 {
     font-size: 40px;
   }
+  .info p {
+    max-width: 80%;
+  }
+  .info h1, .book h1, .FAQ h1 {
+    font-size: 24px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -579,12 +578,12 @@ footer img {
   .book button {
     text-align: center;
   }
-  .FAQ h1 {
-    top: 70px;
-  }
   .FAQ .section {
     top: 50px;
     position: relative;
+  }
+  .FAQ h1 {
+    margin-top: 40px;
   }
 }
 /* Keyframe animation in order to get the pulse like effect on home page arrow */

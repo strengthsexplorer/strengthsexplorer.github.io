@@ -39,7 +39,7 @@ $(document).ready(function() {
   /* MAKE THE NAV BAR APPEAR WHEN THE PAGE IS SCROLLED PAST HOME IMAGE */
   $(window).scroll(function() {
       var yScroll = $(window).scrollTop();
-      var vh = $('.home').outerHeight();
+      var vh = $('.home').outerHeight() -100;
       var header = $('header');
 
       if (yScroll >= vh) {
